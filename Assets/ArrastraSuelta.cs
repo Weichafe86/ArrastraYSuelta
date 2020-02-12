@@ -12,33 +12,26 @@ public class ArrastraSuelta : MonoBehaviour
 
     void OnMouseDown()
     {
-        print("Mouse DOwn");
+        print("Mouse Down");
         mZcoordenadas = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;    
         esferaInitialPos = gameObject.transform.position - GetMousePosicion();
     }
-
-    private void OnMouseUp()
-    {
-        mZcoordenadas = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
-        esferaInitialPos = gameObject.transform.position - GetMousePosicion();
-    }
-
 
 
     private void OnMouseDrag()
     {
         print("Mouse Drag");
-        transform.position = GetMousePosicion() + esferaInitialPos; //posicion de la esfera
+        transform.position = GetMousePosicion() + esferaInitialPos; 
+        
 
     }
   
-    Vector3 GetMousePosicion()
+    private Vector3 GetMousePosicion()
     {
         Vector3 puntoMouse = Input.mousePosition;
         puntoMouse.z = mZcoordenadas;
 
         return Camera.main.ScreenToWorldPoint(puntoMouse);
-    }   
-    
+    }
 
 }
