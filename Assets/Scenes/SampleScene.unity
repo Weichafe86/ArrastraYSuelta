@@ -124,8 +124,8 @@ GameObject:
   - component: {fileID: 58147390}
   - component: {fileID: 58147389}
   - component: {fileID: 58147388}
-  - component: {fileID: 58147392}
   - component: {fileID: 58147394}
+  - component: {fileID: 58147392}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -198,13 +198,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58147387}
-  m_LocalRotation: {x: 0.05658081, y: -0, z: -0, w: 0.998398}
-  m_LocalPosition: {x: 0, y: 2.52, z: 0.23}
+  m_LocalRotation: {x: -0.13721749, y: 0.027351137, z: 0.18458284, w: 0.9728065}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1.1717, y: 1.1717, z: 1.1717}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 6.4870005, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -16.085001, y: 0.15300001, z: 21.466002}
 --- !u!114 &58147392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 58147387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 775517562971db645bfcbbe6d81190ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 274da8058f673a84da693ccc62a31e55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &58147394
@@ -250,7 +250,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!64 &88584517
 MeshCollider:
@@ -279,7 +279,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_ReflectionProbeUsage: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -469,10 +469,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.034130555, y: -0.92825496, z: 0.36932388, w: -0.027887631}
+  m_LocalRotation: {x: 0.029601809, y: -0.8629795, z: 0.503313, w: -0.03265498}
   m_LocalPosition: {x: -0.27, y: 8.21, z: 11.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 43.137, y: 173.94402, z: 353.393}
+  m_LocalEulerAnglesHint: {x: 60.085003, y: 170.052, z: 350.308}
