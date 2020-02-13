@@ -5,19 +5,12 @@ using UnityEngine;
 
 public class ArrastraSuelta : MonoBehaviour
 {
-    /*
-    private void OnMouseDrag()
-    {
-        transform.Translate(Vector3.)
-      
-    }
-    */
 
-
-
+     //public float deltaMovimiento = 1f;
+     
      private Vector3 esferaInitialPos;
      private float mZcoordenadas;
-     Renderer rend;
+     //Renderer rend;
 
      void OnMouseDown()
      {
@@ -26,16 +19,24 @@ public class ArrastraSuelta : MonoBehaviour
          esferaInitialPos = gameObject.transform.position - GetMousePosicion();
      }
 
+    /*
+        private void OnMouseDrag()
+        {
+            print("Mouse Drag");
+            //transform.position = GetMousePosicion() + esferaInitialPos;
+            transform.Translate(Vector3.left * deltaMovimiento * Time.deltaTime);
 
-     private void OnMouseDrag()
-     {
-         print("Mouse Drag");
-         transform.position = GetMousePosicion() + esferaInitialPos; 
+        }
+         */
 
+    private void OnMouseDrag()
+    {
+        transform.position = new Vector3(transform.position.x, 1, transform.position.z);
+        transform.position = GetMousePosicion() + esferaInitialPos;
 
-     }
+    }
 
-     private Vector3 GetMousePosicion()
+    private Vector3 GetMousePosicion()
      {
          Vector3 puntoMouse = Input.mousePosition;
          puntoMouse.z = mZcoordenadas;
@@ -43,14 +44,20 @@ public class ArrastraSuelta : MonoBehaviour
          return Camera.main.ScreenToWorldPoint(puntoMouse);
      }
 
-
+ 
      private void OnCollisionEnter(Collision collision)
      {
-         //rasDePiso= transform.position; //acá quería dejar una altura 
-        Destroy(collision.gameObject); //estoy probando, en vez que destruya que no traspase plane
+        
+        //rasDePiso= transform.position; //acá quería dejar una altura 
+        //Destroy(collision.gameObject); //estoy probando, en vez que destruya que no traspase plane
+        Debug.Log("Collision");
+        /*
+        if(collision == true)
+        {
+            transform.Translate(Vector3.left * deltaMovimiento * Time.deltaTime);
+        }
+        */
+        
      }
 
-    
-
-    //Hacer que la esfera no traspase el plane 
 }
