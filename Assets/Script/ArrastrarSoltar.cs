@@ -35,47 +35,7 @@ public class ArrastrarSoltar : MonoBehaviour
         esferaInitialPos.y = 0;
         gameObject.transform.position = esferaInitialPos;
 
-        // esferaInitialPos = Camera.main.ScreenToWorldPoint(new Vector3(x,y,z));
-        //gameObject.transform.position = esferaInitialPos;// hace que la esfera sea "arrastrada" por el mouse
     }
-
-
-    /*
-    private void OnMouseUp()
-    {
-        
-        Transform trans = GetComponent<Transform>();
-
-        transform.Translate(1, 0, 1);
-           //transform.position = GetMousePosicion();
-      //trans.position = trans.Translate(Vector3(1,0,1));
-        Debug.Log("Mouse Up!");
-        
-    }
-    */
-
-        /*
-       private void OnMouseDrag()
-       {
-
-           transform.position = GetMousePosicion() + esferaInitialPos; //posicion de la esfera
-
-       }
-
-       */
-
-    /*
-        private void OnCollisionEnter(Collision collision)
-       { 
-            
-            do
-            {
-                //Mantener la esfera en el eje Y
-
-            } while ("pelota toque plane dejar eje Y estático");
-            
-       }
-       */
 
 
 }

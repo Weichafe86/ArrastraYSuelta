@@ -61,8 +61,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\ArrastrarSoltar.cs" />
-    <Compile Include="Assets\Script\ArrastraSuelta.cs" />
-    <Compile Include="Assets\Script\ScriptPlane.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Weichafe/Proyectos Unity/Arrastrar/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
