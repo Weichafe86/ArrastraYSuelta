@@ -39,8 +39,8 @@ public class ArrastraSuelta : MonoBehaviour
         } while (shouldContinue == true);
         */
 
-         transform.position = new Vector3(1,0,1);
-         transform.position = GetMousePosicion() + esferaInitialPos;
+         //transform.position = new Vector3(1,0,1);
+         //transform.position = GetMousePosicion() + esferaInitialPos;
 
         }
      

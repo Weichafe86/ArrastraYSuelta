@@ -10,12 +10,10 @@ public class ScriptPlane : MonoBehaviour
     {
 
         colider = GetComponent<MeshCollider>();
-       
-        colision = collision.gameObject;
+      
         Debug.Log("Choque");
-       
-    }
-    */
- 
+        
+    
+ */
 
 }
