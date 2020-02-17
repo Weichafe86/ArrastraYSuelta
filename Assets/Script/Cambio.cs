@@ -1,18 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Cambio : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject panel;
+    public GameObject text;
+
+
+    private void Start()
     {
+        panel.SetActive(false);
         
     }
 
-    // Update is called once per frame
-    void Update()
+
+
+    public void Button_Click()
     {
+        
+        if (panel!=null)
+        {
+            panel.SetActive(true);
+            text.SetActive(false);
+        }
+       
         
     }
 }
