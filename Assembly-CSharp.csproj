@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\ArrastrarSoltar.cs" />
     <Compile Include="Assets\Script\CambiarImagen.cs" />
+    <Compile Include="Assets\Script\CambiarPanel.cs" />
     <Compile Include="Assets\Script\Cambio.cs" />
     <Compile Include="Assets\Script\MenuPrincipal.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
